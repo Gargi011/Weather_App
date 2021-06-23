@@ -8,9 +8,9 @@ API's used:
 
 Files created:
 
-	1. Index.html - A markup file
-	2. Application.js - Actual work done
-	3. Design.css - Look and feel
+	1. index.html - A markup file
+	2. weatherApp.js - Actual work done
+	3. design.css - Look and feel
 
 **Creating the markup HTML file:**
 	
@@ -29,10 +29,10 @@ Files created:
 **Creating the JS File:**
 
 1. Getting the Location Data:
-    Now, API keys assigned:
+    Now, API key assigned:
     
-	  1. Declared two variables and assigned the url's to the API's to it.
-	  2. Declared another two variables and assigned the API keys to it.
+	  1. Declared a variable and assigned the url to the API to it.
+	  2. Declared another variable and assigned the API key to it.
 	  
     Called the geolocation API.
 
