@@ -13,8 +13,20 @@ function weatherApp() {
         const latitude  = position.coords.latitude;
         const longitude = position.coords.longitude;
 
-        location.textContent = '';
-        location.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+        //location.textContent = '';
+        //location.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+        
+        /* Getting the weather info.*/
+        let url = weatherApi + "lat=" + latitude + "&lon=" + longitude + "&appid=" + weatherApiKey + "&units=imperial";
+
+        fetch(url).then (response => response.json())
+                  .then (data => {
+                      console.log(data);
+                      let temp = (data.main.temp - 32) * 5 / 9;
+                      temperature.innerHTML = "Temperature is: " + Math.round(temp) + " °C";
+                      location.innerHTML = "Your Location: " + data.name;
+                      weather.innerHTML = "The weather is: " + data.weather[0].main;
+                  })
     }
 
     function error(e) {
