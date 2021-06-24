@@ -31,6 +31,7 @@ function weatherApp() {
 
     function error(e) {
         location.textContent = `ERROR!(${e.code}): ${e.message}`;
+        temperature.innerHTML = "Location not found!";
     }
 }
 
