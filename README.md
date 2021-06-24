@@ -17,9 +17,12 @@ Files created:
 	1. Link CSS file to HTML file.
 	 
 	2. Inside <body></body> create as many elements with respective id's as needed
-     1. Location
-	   2. Temperature
-	   3. Weather description
+       1. Location
+	   2. Weather
+	   3. Temperature
+	   4. Feels like
+	   5. Minimum and maximum temperature
+	   6. Humidity
      
 	3. Link JS file to HTML file.
 	
