@@ -8,7 +8,7 @@ function weatherApp() {
     let humidity = document.getElementById("humidity");
 
     let weatherApi = "https://api.openweathermap.org/data/2.5/weather?";
-    const weatherApiKey = "76d8b81d03c90b4303c3d8508e4dcdf5";
+    const weatherApiKey = "...";
     
     navigator.geolocation.getCurrentPosition(success, error);
     
